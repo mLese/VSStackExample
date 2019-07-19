@@ -23,21 +23,27 @@ namespace StackExample
 
     public class Stack: IStack
     {
+        private int[] stack = new int[100];
+        private int head = -1;
+
         public Stack() { }
 
         public void push(int val)
         {
-
+            head++;
+            stack[head] = val;
         }
 
         public int pop()
         {
-            return 0;
+            int val = stack[head];
+            head--;
+            return val;
         }
 
         public int peek()
         {
-            return 0;
+            return stack[head];
         }
     }
 }

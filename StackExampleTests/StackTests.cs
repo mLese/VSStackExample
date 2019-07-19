@@ -26,14 +26,13 @@ namespace StackExample.Tests
             stack.push(1);
             Assert.AreEqual(1, stack.peek());
         }
-
+        
         [TestMethod()]
         public void popTest()
         {
             stack.push(1);
             stack.push(2);
             Assert.AreEqual(2, stack.pop());
-            Assert.Fail();
         }
 
         [TestMethod()]
@@ -56,5 +55,6 @@ namespace StackExample.Tests
             stack.pop();
             Assert.AreEqual(2, stack.pop());
         }
+        
     }
 }
