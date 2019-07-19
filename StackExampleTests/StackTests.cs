@@ -33,7 +33,6 @@ namespace StackExample.Tests
             stack.push(1);
             stack.push(2);
             Assert.AreEqual(2, stack.pop());
-            Assert.Fail();
         }
 
         [TestMethod()]
